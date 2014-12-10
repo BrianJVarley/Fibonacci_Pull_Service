@@ -13,12 +13,12 @@
   </welcome-file-list>
   
   <servlet>
-  <servlet-name>hello</servlet-name>
-  <servlet-class>ie.gmit.HelloServlet</servlet-class>
+  <servlet-name>fibonacci</servlet-name>
+  <servlet-class>ie.gmit.FibonacciServlet</servlet-class>
  </servlet>
  
  <servlet-mapping>
-  <servlet-name>hello</servlet-name>
+  <servlet-name>fibonacci</servlet-name>
   <url-pattern>/say_hello</url-pattern>
 </servlet-mapping>
 
