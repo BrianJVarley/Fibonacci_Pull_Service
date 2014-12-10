@@ -10,10 +10,12 @@
 
 <form action="HelloServlet">			
 		 <b>Result</b>  <br>
-		 <input type="text" name="fibNum"size="40px" style="font-size:30pt;height:60px"> <br>
+		 <% String fibNum = request.getParameter("fibNum"); %>	
+		  <input type="text" name="fibNum" value="<%=fibNum%>" size="40px" style="font-size:30pt;height:60px">
+		 <br>
 		<br>
 		<a href="home.jsp">Return to Main</a>
-			<% String fibNum = request.getParameter("fibNum"); %>	
+			
 		</form>	
 
 </body>

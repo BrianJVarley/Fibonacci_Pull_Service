@@ -9,7 +9,7 @@
 <body>
 <form action="say_hello" method="post">			
 			 <b>Fibonacci Sequence Length </b>  <br>
-			 <input type="text" name="fibNum"size="20px" style="font-size:30pt;height:60px" >
+			 <input type="text" name="fibNum"size="20px" min<%=1%> max<%=100%> style="font-size:30pt;height:60px" >
 			 <input type="submit" value="submit" style="font-size:30pt;height:60px" > <br>	
 			 Value [1-100]<br>
 								
