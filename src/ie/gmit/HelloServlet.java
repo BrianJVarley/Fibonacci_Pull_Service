@@ -43,6 +43,7 @@ public class HelloServlet extends HttpServlet {
 		      //Lookup server object from server's registry
 		      IFibonacci fibonacci_proxy = (IFibonacci)registry.lookup("PowerObject");
 		      
+		      /*
 		      //get user input 
 		      Scanner user_input = new Scanner(System.in);
 		      String fibMaxNum;
@@ -50,14 +51,15 @@ public class HelloServlet extends HttpServlet {
 		      System.out.println("Enter the highest fibonacci number: ");
 		      fibMaxNum = user_input.next();
 		      
+		       */
+		      int fibMax = Integer.parseInt(fibNum);
 		      
-		      int fibMax = Integer.parseInt(fibMaxNum);
+		   
 		      
-		    
-		    //Invoke server object's methods 
-		      //Get Fibonacci array.
-		  	 int[] sequence = fibonacci_proxy.fibonacciArrayTest(fibMax);
-		  	 for (int value : sequence) {
+		     //Invoke server object's methods 
+		     //Get Fibonacci array.
+		  	 int[] Fibsequence = fibonacci_proxy.fibonacciArrayTest(fibMax);
+		  	 for (int value : Fibsequence) {
 			    System.out.println(value);
 		  	 }
 		  	 
