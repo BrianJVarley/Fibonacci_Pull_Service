@@ -1,11 +1,22 @@
 README 
 Brian Varley G00290342
 
+GitHub Repo:  https://github.com/BrianJVarley/G00290342_Fibonacc_Pull_Service
 
+APPLICATION CAPABILITIES:
 
+1)Enter fibonacci number in numberic form on 'home' jsp page .
+2)Calls rmi remote fibonacci service.
+3)Calculate fibonacci sequence on server side.
+4)Returns fibonacci sequence as an array 'fibSequence' to FibonacciServlet.
+5)Passes fibonacci sequence to 'result' page to output in an input field.
+6)Hyper link to navigate back to 'home' page.
 
+*Funtionalities not implemented due to time constraints:
 
-
+1)Message queueing system
+2)Polling mechanism
+3)Polling page, present but not implemented
 
 DEPLOYMENT INSTRUCTIONS:
 
@@ -19,21 +30,33 @@ DEPLOYMENT INSTRUCTIONS:
 4)Click "Finish"
 
 
-2-Add Servlet Jar:
+2-Import Project:
+
+1)File --> Import 
+2)Web --> War File
+3)Browse to "ds.war" file
+4)Click "Finish"
+ 
+3-Add Servlet Jar:
 
 1)Project --> Properties --> Java Build Path --> add external jars
 2)Navigate to Apache installation directory --> Lib folder --> servlet-api
 
-3-Run application:
+4-Run application:
 
 1)Right click "FibonacciServer" --> Run as: Java Application
-2)Right click "Fibo" project folder --> Run as: Run on Server
+2)Right click "ds" project folder --> Run as: Run on Server
+
+
+*Run from command prompt:
+
+1)Add ds.war to Apache --> "web-apps" folder.
+2)Open CMD --> %TOMCAT_HOME%\bin\startup --> Press Enter
+3)Open Browser, go to --> http://localhost:8080/ds/
 
 
 
-
-
-Code References:
+CODE REFERENCES:
 
 http://lycog.com/distributed-systems/how-to-implement-java-rmi/
 

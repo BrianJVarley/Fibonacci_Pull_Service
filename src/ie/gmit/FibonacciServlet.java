@@ -46,11 +46,7 @@ public class FibonacciServlet extends HttpServlet {
 		      fibSequence = fibonacci_proxy.fibonacciArrayTest(fibMax);
 		  	 
 		  	 
-		  	 for (int value : fibSequence) {
-			    System.out.println(value);
-		  	 }
-		  	 
-		  	 
+	        //printing contents of array for debug purposes to console.
 		  	System.out.println(Arrays.toString(fibSequence));
 		  	
 		  	 	    
