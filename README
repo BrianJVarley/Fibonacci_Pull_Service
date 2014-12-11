@@ -1,8 +1,39 @@
-README Brian Varley G00290342
+README 
+Brian Varley G00290342
 
 
 
-References:
+
+
+
+
+DEPLOYMENT INSTRUCTIONS:
+
+*Run from Eclipse:
+
+1-Configure Server:
+
+1)Windows --> Show View --> Servers
+2)Right click --> New --> Server 
+3)Expand Apache folder -> Select Apache version
+4)Click "Finish"
+
+
+2-Add Servlet Jar:
+
+1)Project --> Properties --> Java Build Path --> add external jars
+2)Navigate to Apache installation directory --> Lib folder --> servlet-api
+
+3-Run application:
+
+1)Right click "FibonacciServer" --> Run as: Java Application
+2)Right click "Fibo" project folder --> Run as: Run on Server
+
+
+
+
+
+Code References:
 
 http://lycog.com/distributed-systems/how-to-implement-java-rmi/
 

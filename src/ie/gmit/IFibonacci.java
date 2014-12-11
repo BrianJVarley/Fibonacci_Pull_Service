@@ -6,10 +6,8 @@ import java.rmi.RemoteException;
 public interface IFibonacci extends Remote {
 
 	
-	//Declare available methods and must throw RemoteException
-	  long fibonacci(int fibMax) throws RemoteException;
-	  
-	  
+	  //Declare available methods,must throw RemoteException
+	  //long fibonacci(int fibMax) throws RemoteException; 
 	  int[] fibonacciArrayTest(int fibMax) throws RemoteException;
 	
 }

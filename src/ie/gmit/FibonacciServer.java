@@ -13,7 +13,7 @@ public class FibonacciServer {
 		      FibonacciImplementation fibo = new FibonacciImplementation();
 		 
 		      //Reference to registry service by creating registry service
-		      Registry registry = LocateRegistry.createRegistry(1097);
+		      Registry registry = LocateRegistry.createRegistry(1099);
 		 
 		      //Register server object to registry with unique name
 		      registry.rebind("PowerObject", fibo);
