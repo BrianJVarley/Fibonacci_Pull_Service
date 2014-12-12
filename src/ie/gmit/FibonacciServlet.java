@@ -6,9 +6,13 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Arrays;
-import java.util.Scanner;
 
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -19,6 +23,7 @@ public class FibonacciServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	private int[]  fibSequence;
+	
 	
 	//
 	@Override
@@ -58,8 +63,12 @@ public class FibonacciServlet extends HttpServlet {
 		
             //send input to the result page using a redirect
             //resp.sendRedirect(("result.jsp?fibNum=" + fibNum));
-            resp.sendRedirect(("result.jsp?fibSequence=" + fibSequence)); 
+            //resp.sendRedirect(("result.jsp?fibSequence=" + fibSequence));
+            
+            resp.sendRedirect(("result.jsp?fibSequence=" + Arrays.toString(fibSequence)));
            
+               
 		  }
+
         
 }

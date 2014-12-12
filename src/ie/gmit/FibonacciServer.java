@@ -18,7 +18,7 @@ public class FibonacciServer {
 		      //Register server object to registry with unique name
 		      registry.rebind("PowerObject", fibo);
 		 
-		      System.out.println("Remote server started...");
+		      System.out.println("Fibonacci server started...");
 		    }catch(RemoteException re){
 		      re.printStackTrace();
 		    }
