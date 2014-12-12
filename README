@@ -18,6 +18,12 @@ APPLICATION CAPABILITIES:
 2)Polling mechanism
 3)Polling page, present but not implemented
 
+*Critiques:
+
+1)Passing fibonacci sequence array through url not ideal.
+2)Array printed including array brackets.
+3)No messaging queue implemnted.
+
 DEPLOYMENT INSTRUCTIONS:
 
 *Run from Eclipse:
@@ -50,6 +56,18 @@ DEPLOYMENT INSTRUCTIONS:
 
 *Run from command prompt:
 
+#Start RMI service:
+
+1)Open CMD
+2)CD to project folder on machine
+3)javac gmit/*.java
+4)rmic FibonacciImplementation
+5)rmic IFibonacci
+6)rmic v1.1 keep generated MessageServiceImpl
+7)Start java gmit.FibonacciServer 
+
+
+#Deploy to Apache Tom-Cat
 1)Add ds.war to Apache --> "web-apps" folder.
 2)Open CMD --> %TOMCAT_HOME%\bin\startup --> Press Enter
 3)Open Browser, go to --> http://localhost:8080/ds/
@@ -59,4 +77,17 @@ DEPLOYMENT INSTRUCTIONS:
 CODE REFERENCES:
 
 http://lycog.com/distributed-systems/how-to-implement-java-rmi/
+
+http://stackoverflow.com/questions/16670533/send-parameters-from-jsp-to-servlet-using-post
+
+http://lycog.com/distributed-systems/how-to-implement-java-rmi/
+
+http://stackoverflow.com/questions/4221825/passing-an-array-from-one-servlet-to-another-servlet
+
+http://www.vogella.com/tutorials/EclipseWTP/article.html
+
+
+
+
+
 

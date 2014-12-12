@@ -50,6 +50,9 @@ public class FibonacciServlet extends HttpServlet {
 		     //Get Fibonacci array.
 		      fibSequence = fibonacci_proxy.fibonacciArrayTest(fibMax);
 		  	 
+		    //printing user input value for debug purposes to console.
+			System.out.println("User input: " + fibNum );
+		      
 		  	 
 	        //printing contents of array for debug purposes to console.
 		  	System.out.println(Arrays.toString(fibSequence));
