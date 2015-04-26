@@ -1,11 +1,10 @@
 README 
 Brian Varley G00290342
 
-GitHub Repo:  https://github.com/BrianJVarley/G00290342_Fibonacc_Pull_Service
 
+Fibonacci RMI Java EE video:
 
-[![Fibonacci RMI Java EE](http://img.youtube.com/vi/nX_inqaAzOI/0.jpg)]
-(https://www.youtube.com/watch?v=nX_inqaAzOI&feature=youtu.be&hd=1 "RMI Fibonacci Java")
+(https://www.youtube.com/watch?v=nX_inqaAzOI&feature=youtu.be&hd=1)
 
 
 [<img src="http://img.youtube.com/vi/nX_inqaAzOI/0.jpg">](http://img.youtube.com/)
@@ -81,7 +80,9 @@ DEPLOYMENT INSTRUCTIONS:
 2)Open CMD --> %TOMCAT_HOME%\bin\startup --> Press Enter
 3)Open Browser, go to --> http://localhost:8080/ds/
 
+GitHub Link:
 
+https://github.com/BrianJVarley/G00290342_Fibonacc_Pull_Service
 
 CODE REFERENCES:
 
